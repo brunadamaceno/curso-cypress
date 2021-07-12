@@ -35,7 +35,7 @@ it("has 'TICKETBOX' header's heading", () => {
 cy.get("header h1").should("contain", "TICKETBOX");
 });
 
-it("alerts on invalid email", () => {
+it("alerts on invalid email", () => { 
 cy.get ("#email")
   .as("email")
   .type("brunaisabela-gmail.com");
